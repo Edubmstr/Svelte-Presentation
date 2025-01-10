@@ -10,6 +10,9 @@ npm install
 npm run dev
 ```
 
+Todo App befindet sich in: src/+page.svelte
+TodoItem: lib/TodoItem.svelte
+
 # Offizielle Docs von sv:
 # sv
 
