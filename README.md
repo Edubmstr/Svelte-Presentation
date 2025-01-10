@@ -1,3 +1,16 @@
+# Example Todo App für die Svelte Präsentattion
+
+Nach dem Klonen des Repositories:
+
+```bash
+# Dependencies installieren
+npm install
+
+# Dev Server starten
+npm run dev
+```
+
+#Offizielle Docs von sv:
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
