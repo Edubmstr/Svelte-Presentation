@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-#Offizielle Docs von sv:
+# Offizielle Docs von sv:
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
