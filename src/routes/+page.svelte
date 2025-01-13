@@ -7,6 +7,9 @@
 		}
 	]);
 	let completedTodos = $derived(todos.filter(t => t.completed).length);
+	const deleteTodo = (index) => {
+        todos = todos.filter((_, i) => i !== index);
+    };
 	$inspect(todos);
 </script>
 
@@ -17,7 +20,7 @@
 				type="text"
 				placeholder="Neues Todo eingeben"
 				onkeydown={(e) => {
-					if (e.key === 'Enter') {
+					if (e.key === 'Enter' && e.target.value.trim()) {
 						todos.push({
 							completed: false,
 							name: e.currentTarget.value
@@ -28,7 +31,7 @@
 			/>
 
 			{#each todos, i}
-				<TodoItem bind:todo={todos[i]}/>
+				<TodoItem bind:todo={todos[i]} onDelete={() => deleteTodo(i)}/>
 			{/each}
 
 			<p>Abgeschlossene Todos: {(console.log('clicked'), completedTodos)}</p>
