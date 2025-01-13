@@ -22,4 +22,9 @@
         border: none;
         padding: 5px;
     }
+
+    input {
+        background-color: lightgrey;
+        border: 1px solid;
+    }
 </style>
