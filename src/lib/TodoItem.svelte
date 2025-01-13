@@ -11,3 +11,15 @@
         </button>
     </label>
 </div>
+
+<style>
+    div {
+        margin: 8px 0;
+    }
+    button {
+        background-color: coral;
+        border-radius:  6px;
+        border: none;
+        padding: 5px;
+    }
+</style>
